@@ -1,4 +1,59 @@
-/*# sourceMappingURL=main.min.css.map */
-@import "./utils/vars";
-@import "./general/base";
-@import "./components/clients";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.clients {
+  text-align: center;
+}
+.clients__title {
+  font-size: 36px;
+  color: black;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 0px;
+}
+.clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.clients__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: fill, border, border-radius;
+  transition-property: fill, border, border-radius;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}/*# sourceMappingURL=main.min.css.map */
