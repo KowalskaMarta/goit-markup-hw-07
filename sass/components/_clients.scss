@@ -3,7 +3,6 @@
 
   &__title {
     color: getColor("primary");
-    line-height: 1.17;
     text-align: center;
     padding-top: 0px;
     @include font($fw: 700, $fs: 36px, $lh: 1.17);
