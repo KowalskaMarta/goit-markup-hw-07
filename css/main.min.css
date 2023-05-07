@@ -36,6 +36,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  margin-top: 50px;
 }
 .clients__link {
   width: 170px;
@@ -51,10 +52,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  fill: #afb1b8;
   -webkit-transition-property: fill, border, border-radius;
   transition-property: fill, border, border-radius;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients:is(:hover, :focus) {
+  border-color: #2196f3;
+  fill: #2196f3;
 }/*# sourceMappingURL=main.min.css.map */
