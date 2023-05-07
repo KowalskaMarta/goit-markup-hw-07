@@ -16,6 +16,52 @@
   padding: 0 15px;
 }
 
+.offer {
+  text-align: center;
+}
+.offer__title {
+  color: #212121;
+  text-align: center;
+  padding-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.offer__list {
+  margin-top: 50px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.offer__item {
+  position: relative;
+}
+.offer__item > img {
+  vertical-align: middle;
+}
+.offer__subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .clients {
   text-align: center;
 }

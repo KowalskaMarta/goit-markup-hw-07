@@ -3,8 +3,3 @@
   font-size: $fs;
   line-height: $lh;
 }
-
-@mixin title {
-  @include font($fw: 700, $fs: 36px, $lh: 42px, $lh: 1.17);
-  margin-bottom: 50px;
-}
