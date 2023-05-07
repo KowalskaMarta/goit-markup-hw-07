@@ -1,0 +1,30 @@
+.clients {
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    color: black;
+    line-height: 1.17;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: fill, border, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
