@@ -20,7 +20,7 @@
 }
 .clients__title {
   font-size: 36px;
-  color: red;
+  color: #212121;
   line-height: 1.17;
   text-align: center;
   padding-top: 0px;
@@ -35,6 +35,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 30px;
 }
 .clients__link {
   width: 170px;
