@@ -2,11 +2,11 @@
   text-align: center;
 
   &__title {
-    font-size: 36px;
-    color: #212121;
+    color: getColor("primary");
     line-height: 1.17;
     text-align: center;
     padding-top: 0px;
+    @include font($fw: 700, $fs: 36px, $lh: 1.17);
   }
 
   &__item {
@@ -20,19 +20,19 @@
   &__link {
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid getColor("tertiary");
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #afb1b8;
+    fill: getColor("tertiary");
     transition-property: fill, border, border-radius;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &:is(:hover, :focus) {
-    border-color: #2196f3;
-    fill: #2196f3;
+    &:is(:hover, :focus) {
+      border-color: getColor("secondary");
+      fill: getColor("secondary");
+    }
   }
 }

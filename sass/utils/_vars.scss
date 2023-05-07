@@ -1,6 +1,16 @@
 @use "sass:string";
 
-$font: (
+$fonts: (
   "rob": "'Roboto', sans-serif",
   "ral": "'Raleway', sans-serif",
 );
+
+$colors: (
+  "primary": #212121,
+  "secondary": #2196f3,
+  "tertiary": #afb1b8,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +20,13 @@
   text-align: center;
 }
 .clients__title {
-  font-size: 36px;
   color: #212121;
   line-height: 1.17;
   text-align: center;
   padding-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
 .clients__item {
   display: -webkit-box;
@@ -60,7 +63,7 @@
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients:is(:hover, :focus) {
+.clients__link:is(:hover, :focus) {
   border-color: #2196f3;
   fill: #2196f3;
 }/*# sourceMappingURL=main.min.css.map */
