@@ -25,3 +25,7 @@ $background-color: (
 @function getBackgroundColor($bg-color) {
   @return map-get($background-color, $bg-color);
 }
+
+@function getFont($font) {
+  @return string.unquote(map-get($fonts, $font));
+}
