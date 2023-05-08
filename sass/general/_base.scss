@@ -20,6 +20,10 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &--bg-decoration {
+    background-color: getColor("bgc-secondary");
+  }
 }
 
 .container {
