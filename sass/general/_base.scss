@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+body {
+  font: {
+    family: getFont("rob");
+  }
+  color: getColor("primary");
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
