@@ -49,6 +49,15 @@ header {
           align-items: center;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
