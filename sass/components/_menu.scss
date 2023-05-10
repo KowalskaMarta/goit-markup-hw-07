@@ -1,5 +1,5 @@
 .menu {
-  @include flex-center;
+  @include flex-position;
   gap: 46px;
 
   &__item {
