@@ -244,6 +244,7 @@ nav {
   line-height: 1.15;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 12px;
 }
 .modal__form > label {
   display: -webkit-box;
@@ -258,8 +259,11 @@ nav {
 }
 .modal__label {
   position: relative;
-  max-width: 448px;
   margin: 0 auto;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 .modal__text {
   font-style: normal;
@@ -267,17 +271,11 @@ nav {
   font-size: 12px;
   line-height: 1.17;
   color: #757575;
-  padding-top: 12px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   display: block;
 }
-.modal__input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  height: 40px;
-  position: relative;
-  padding-left: 42px;
-  padding-top: 10px;
+.modal__text--color {
+  color: #2196f3;
 }
 .modal__icon {
   fill: #212121;
@@ -291,6 +289,7 @@ nav {
 .modal__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  width: 448px;
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
@@ -320,6 +319,8 @@ nav {
   border-radius: 2px;
 }
 .modal__input {
+  width: 448px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -333,31 +334,14 @@ nav {
   border-color: #2196f3;
   outline: none;
 }
-.modal__label {
-  display: block;
-  width: 100%;
-  background-color: #ffffff;
-  border: 1px solid #212121;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.modal__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-  color: #757575;
-}
-.modal__text--color {
-  color: #2196f3;
-}
-.modal__butn {
+.modal__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
 }
 
 .contact {
