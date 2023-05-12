@@ -99,8 +99,6 @@
                         placeholder="Wprowadź tekst"
                       ></textarea>
                     </label>
-                    <div class="modal__checkbox">
-                      <div class="modal__checkbox-control">
                         <input
                           type="checkbox"
                           id="check"
@@ -108,20 +106,18 @@
                           value="1"
                           class="checkbox__input"
                         />
-                        <label class="checkbox__label" for="check">
-                          <svg class="check-in" width="11" height="8">
+                        <label class="modal__checkbox" for="check">
+                          <svg class="modal__checkmark" width="11" height="8">
                             <use href="./images/icons.svg#icon-check"></use>
                           </svg>
                         </label>
-                      </div>
-                      <span class="checkbox__text"
-                        >Oświadczam iż akceptuję <a href="#" class="highlight-check"
+                     
+                      <span class=" modal__checkboxtext"
+                        >Oświadczam iż akceptuję <a href="#" class="modal__link"
                           >Regulamin</a
                         >
-                        i <a href="#" class="checkbox__text--color">Politykę Prywatności</a>.</span
+                        i <a href="#" class="modal__link">Politykę Prywatności</a>.</span
                       >
-                    </div>
-                  
                     <div class="modal__btn">
                       <button type="submit" class="button">
                         Wyślij

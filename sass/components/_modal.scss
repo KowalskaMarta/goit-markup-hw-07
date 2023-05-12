@@ -58,20 +58,20 @@
     margin-top: 40px;
     margin-bottom: 12px;
   }
-  &__form {
-    & > label {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-  }
+  // &__form {
+  //   & > label {
+  //     display: flex;
+  //     flex-direction: column;
+  //     flex-wrap: nowrap;
+  //   }
+  // }
   &__label {
     position: relative;
-    margin: 0 auto;
+    margin-left: 40px;
     display: block;
-    width: 100%;
     background-color: getColor("bright");
     cursor: pointer;
+    text-align: left;
   }
 
   &__text {
@@ -81,6 +81,7 @@
     line-height: 1.17;
     color: getColor("grey");
     margin-bottom: 4px;
+    margin-top: 10px;
     display: block;
 
     &--color {
@@ -108,20 +109,7 @@
     align-items: start;
     resize: none;
   }
-  &__checkbox {
-    display: inline-flexbox;
-    column-gap: 1rem;
-    padding-left: 54px;
-    padding-top: 20px;
-  }
-  &__checkbox-control {
-    position: relative;
-    display: inline-flex;
-    flex: 0 0 auto;
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-  }
+
   &__input {
     width: 448px;
     height: 40px;
@@ -144,5 +132,41 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+  }
+  &__checkbox {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  &__checkboxtext {
+    @include font($fs: 14px, $lh: 1.7);
+    color: getColor("grey");
+    margin-left: 77px;
+  }
+  &__link {
+    color: getColor("secondary");
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: none;
+    height: 0;
+    width: 0;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 4px;
+    left: 55px;
+    height: 15px;
+    width: 16px;
+    background-color: getColor("bright");
+    border: 2px solid getColor("primary");
+    border-radius: 2px;
+    cursor: pointer;
   }
 }
