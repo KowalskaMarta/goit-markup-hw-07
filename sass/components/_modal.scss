@@ -33,6 +33,21 @@
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &__close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    fill: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 8px;
+    padding: 9px;
+  }
+
   &__title {
     display: flex;
     flex-direction: column;
@@ -41,5 +56,110 @@
     line-height: 1.15;
     text-align: center;
     margin-top: 40px;
+  }
+  &__form {
+    & > label {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+  &__label {
+    position: relative;
+    max-width: 448px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: getColor("grey");
+    padding-top: 12px;
+    padding-bottom: 4px;
+    display: block;
+  }
+
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    position: relative;
+    padding-left: 42px;
+    padding-top: 10px;
+  }
+
+  &__icon {
+    fill: getColor("primary");
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    left: 15px;
+    top: 37px;
+    z-index: 1;
+  }
+
+  &__textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    padding-left: 16px;
+    padding-top: 12px;
+    align-items: start;
+    resize: none;
+  }
+  &__checkbox {
+    display: inline-flexbox;
+    column-gap: 1rem;
+    padding-left: 54px;
+    padding-top: 20px;
+  }
+  &__checkbox-control {
+    position: relative;
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+  }
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    position: relative;
+    padding-left: 42px;
+    padding-top: 10px;
+
+    &:is(:hover, :focus) {
+      fill: getColor("secondary");
+      border-radius: 4px;
+      border-color: getColor("secondary");
+      outline: none;
+    }
+  }
+  &__label {
+    display: block;
+    width: 100%;
+    background-color: getColor("bright");
+    border: 1px solid getColor("primary");
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    color: getColor("grey");
+
+    &--color {
+      color: getColor("secondary");
+    }
+  }
+  &__butn {
+    display: flex;
+    justify-content: center;
   }
 }

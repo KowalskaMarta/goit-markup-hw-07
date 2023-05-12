@@ -58,13 +58,13 @@
               Zamów usługe
             </button> 
             <div class="backdrop is-hidden" data-modal>
-              <div class="modal">
+             
                 <button type="button" class="modal__close" data-modal-close>
                   <svg class="icon-close" width="11" height="11">
                     <use href="./images/icons.svg#icon-Vector"></use>
                   </svg>
                 </button>
-                <div>
+                <div class="modal">
                   <h2 class="modal__title">
                     Zostaw swoje dane w formularzu poniżej
                   </h2>
@@ -72,64 +72,63 @@
                     <label class="modal__label">
                       <span class="modal__text">Imię</span>
                       <input class="modal__input" type="text" name="username" />
-                      <svg class="icon-form" width="12" height="12">
+                      <svg class="modal__icon" width="12" height="12">
                         <use href="./images/icons.svg#icon-person"></use>
                       </svg>
                     </label>
                     <label class="modal__label">
                       <span class="modal__text">Telefon</span>
                       <input class="modal__input" type="text" name="username" />
-                      <svg class="icon-form" width="13" height="13">
+                      <svg class="modal__icon" width="13" height="13">
                         <use href="./images/icons.svg#icon-tel"></use>
                       </svg>
                     </label>
                     <label class="modal__label">
                       <span class="modal__text">Email</span>
                       <input class="modal__input" type="text" name="username" />
-                      <svg class="icon-form" width="15" height="12">
+                      <svg class="modal__icon" width="15" height="12">
                         <use href="./images/icons.svg#icon-mail2"></use>
                       </svg>
                     </label>
                     <label class="modal__label">
                       <span class="modal__text">Komentarz</span>
                       <textarea
-                        class="kom-input"
+                        class="modal__textarea"
                         name="feedback"
                         rows="10"
                         placeholder="Wprowadź tekst"
                       ></textarea>
                     </label>
                     <div class="modal__checkbox">
-                      <div class="checkbox-control">
+                      <div class="modal__checkbox-control">
                         <input
                           type="checkbox"
                           id="check"
                           name="check"
                           value="1"
-                          class="checkbox-input"
+                          class="checkbox__input"
                         />
-                        <label class="checkbox-label" for="check">
+                        <label class="checkbox__label" for="check">
                           <svg class="check-in" width="11" height="8">
                             <use href="./images/icons.svg#icon-check"></use>
                           </svg>
                         </label>
                       </div>
-                      <span class="checkbox-text"
+                      <span class="checkbox__text"
                         >Oświadczam iż akceptuję <a href="#" class="highlight-check"
                           >Regulamin</a
                         >
-                        i <a href="#" class="highlight-check">Politykę Prywatności</a>.</span
+                        i <a href="#" class="checkbox__text--color">Politykę Prywatności</a>.</span
                       >
                     </div>
                   
-                    <div class="modal-btn">
-                      <button type="submit" class="modal-btn-submit">
+                    <div class="modal__btn">
+                      <button type="submit" class="button">
                         Wyślij
                       </button>
                   </form>
                 </div>
               </div>
-            </div>
         </div>
       </section> 
     <!-- lorem ipsum -->
