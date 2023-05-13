@@ -597,8 +597,13 @@ nav {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-left: 70px;
   gap: 0;
+}
+.social__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 .social__link {
   display: -webkit-box;
@@ -770,6 +775,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  fill: #ffffff;
   padding: 11px 28px 10px 42px;
 }
 .newsletter__button > svg {
