@@ -5,7 +5,7 @@
   margin-right: 93px;
 
   &--dark {
-    color: black;
+    color: getColor("primary");
   }
   &--bright {
     color: getColor("bright");

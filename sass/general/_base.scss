@@ -37,7 +37,7 @@ ul {
 }
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid getBorderColor("head-border");
 }
 
 .header {
@@ -52,7 +52,7 @@ nav {
   align-items: center;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: getBackgroundColor("footer-bg");
   padding-top: 60px;
   padding-bottom: 60px;
 

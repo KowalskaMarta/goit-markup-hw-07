@@ -33,7 +33,7 @@
     }
 
     &--text {
-      color: #757575;
+      color: getColor("grey");
       font-weight: 400;
       padding-bottom: 16px;
     }
