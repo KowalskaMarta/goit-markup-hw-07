@@ -49,14 +49,22 @@
   }
 
   &__title {
-    @include font($fw: 700, $fs: 20px, $lh: 1.15);
     display: flex;
     flex-direction: column;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
   }
-
+  // &__form {
+  //   & > label {
+  //     display: flex;
+  //     flex-direction: column;
+  //     flex-wrap: nowrap;
+  //   }
+  // }
   &__label {
     position: relative;
     margin-left: 40px;
@@ -67,8 +75,10 @@
   }
 
   &__text {
-    @include font($fw: 400, $fs: 12px, $lh: 1.17);
     font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
     color: getColor("grey");
     margin-bottom: 4px;
     margin-top: 10px;
@@ -109,7 +119,15 @@
     position: relative;
     padding-left: 42px;
     padding-top: 10px;
-    outline: none;
+
+outline: none;
+    
+    // &:is(:hover, :focus) {
+    //   fill: getColor("secondary");
+    //   border-radius: 4px;
+    //   border-color: getColor("secondary");
+    //   outline: none;
+    // }
   }
 
   &__btn {
@@ -119,73 +137,85 @@
   }
 
   &__checkbox {
-    padding-left: 54px;
-    padding-top: 20px;
+      padding-left: 54px;
+      padding-top: 20px;
   }
 
   &__checkcontrol {
     position: relative;
-    display: inline-flex;
-    flex: 0 0 auto;
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
+      display: inline-flex;
+      flex: 0 0 auto;
+      width: 16px;
+      height: 15px;
+      border-radius: 2px;
   }
 
   &__checkinput {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    clip: rect(1px, 1px, 1px, 1px);
+      width: 100%;
+      height: 100%;
+      clip: rect(1px, 1px, 1px, 1px);
   }
 
   &__checklabel {
     display: block;
-    width: 100%;
-    background-color: getColor("bright");
-    border: 1px solid getColor("primary");
-    border-radius: 2px;
-    cursor: pointer;
+      width: 100%;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 2px;
+      cursor: pointer;
 
-    &:after {
-      content: " ";
-      position: absolute;
-      display: block;
-    }
+      &:after{
+          content: " ";
+          position: absolute;
+          display: block;
+      }
   }
+
+
+
 
   &__checkin {
     position: absolute;
-    top: 4px;
-    left: 3px;
-    fill: getColor("secondary");
+      top: 4px;
+      left: 3px;
+      fill: red;
   }
 
-  &__checktext {
-    @include font($fw: 400, $fs: 14px, $lh: 1.17);
-    font-style: normal;
-    margin-top: 20px;
-    color: getColor("grey");
+
+  &__checktext{
+      font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        font-style: normal;
+        color: pink;
   }
 
   &__link {
-    @include font($fw: 400, $fs: 14px, $lh: 1.17);
-    font-style: normal;
-    color: getColor("secondary");
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      font-style: normal;
+      color: darkmagenta;
   }
+
 }
+
+
+
 
 .modal__checkinput:checked + .modal__checklabel {
   background-image: url(../images/icons.svg#icon-check);
-  background-color: getColor("secondary");
+  background-color: red;
   border: none;
 }
 
+
 .modal__input:focus,
-.modal__input:focus + .modal__icon,
+.modal__input:focus+.modal__icon,
 .modal__textarea:focus {
-  fill: getColor("secondary");
+  fill: indianred;
   border-radius: 4px;
-  border-color: getColor("secondary");
+  border-color: indianred;
   outline: none;
 }
