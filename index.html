@@ -52,19 +52,18 @@
     <main>
       <section class="section central">
         <div class="container">
-          
             <h1 class="central__title">Efektywne rozwiązania dla waszego biznesu</h1>
             <button class="button" data-modal-open type="button">
               Zamów usługe
             </button> 
             <div class="backdrop is-hidden" data-modal>
-             
-                <button type="button" class="modal__close" data-modal-close>
-                  <svg class="icon-close" width="11" height="11">
+                <div class="modal">
+                  <button type="button" data-modal-close>
+                  <svg class="modal__close" width="11" height="11">
                     <use href="./images/icons.svg#icon-Vector"></use>
                   </svg>
                 </button>
-                <div class="modal">
+
                   <h2 class="modal__title">
                     Zostaw swoje dane w formularzu poniżej
                   </h2>
@@ -99,25 +98,21 @@
                         placeholder="Wprowadź tekst"
                       ></textarea>
                     </label>
-                        <input
-                          type="checkbox"
-                          id="check"
-                          name="check"
-                          value="1"
-                          class="checkbox__input"
-                        />
-                        <label class="modal__checkbox" for="check">
-                          <svg class="modal__checkmark" width="11" height="8">
+
+<div class="modal__checkbox">
+                      <div class="modal__checkcontrol">
+                        <input type="checkbox" id="check" name="check" value="1" class="modal__checkinput">
+                        <label class="modal__checklabel" for="check">
+                          <svg class="modal__checkin" width="11" height="8">
                             <use href="./images/icons.svg#icon-check"></use>
                           </svg>
                         </label>
-                     
-                      <span class=" modal__checkboxtext"
-                        >Oświadczam iż akceptuję <a href="#" class="modal__link"
-                          >Regulamin</a
-                        >
-                        i <a href="#" class="modal__link">Politykę Prywatności</a>.</span
-                      >
+                      </div>
+                      <span class="modal__checktext">Oświadczam iż akceptuję <a href="#" class="modal__link">Regulamin</a>
+                        i <a href="#" class="modal__link">Politykę Prywatności</a>.</span>
+                    </div>
+
+
                     <div class="modal__btn">
                       <button type="submit" class="button">
                         Wyślij
