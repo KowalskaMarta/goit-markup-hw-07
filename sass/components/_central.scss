@@ -1,6 +1,6 @@
 .central {
   @include flex-position;
-  background-color: getColor("bgc-first");
+  background-color: #2f303a;
   text-align: center;
   padding: 200px 0;
   background-image: linear-gradient(
